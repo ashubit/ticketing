@@ -1,0 +1,23 @@
+<div class="buses-hero">
+  <h1>Available Buses</h1>
+  <div class="buses-list">
+    <div class="central-container">
+      <div class="responsive-flex">
+        <mat-card class="bus-card" *ngFor="let bus of buses">
+          <mat-card-header>
+            <mat-icon mat-card-avatar color="primary">directions_bus</mat-icon>
+            <mat-card-title>Express Bus {{bus}}</mat-card-title>
+            <mat-card-subtitle>AC | WiFi | Charging</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Departs: 10:00 AM | Arrives: 2:00 PM</p>
+            <p>Seats Available: 18</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-stroked-button color="primary">View Seats</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

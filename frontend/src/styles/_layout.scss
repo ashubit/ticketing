@@ -1,0 +1,40 @@
+// Responsive grid utility
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+// Responsive flex utility
+.responsive-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+// Centralized container
+.central-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .central-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .central-container {
+    padding: 0.5rem;
+  }
+}

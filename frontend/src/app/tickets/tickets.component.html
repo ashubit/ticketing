@@ -1,0 +1,22 @@
+<div class="central-container">
+  <div class="responsive-grid">
+    <mat-card class="ticket-card" *ngFor="let ticket of tickets">
+      <div class="tickets-hero">
+        <h1>My Tickets</h1>
+        <mat-list>
+          <mat-list-item *ngFor="let ticket of [1,2,3]">
+            <mat-icon matListIcon color="primary">confirmation_number</mat-icon>
+            <div matLine>Bus from City A to City B</div>
+            <div matLine class="secondary">Date: 2025-07-01 | Seat: 12A</div>
+            <mat-chip-listbox>
+              <mat-chip color="accent" selected>Confirmed</mat-chip>
+            </mat-chip-listbox>
+            <button mat-icon-button color="warn" aria-label="Cancel Ticket">
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </mat-card>
+  </div>
+</div>
