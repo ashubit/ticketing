@@ -5,7 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { CommonModule, NgIf } from '@angular/common'; // <-- Import NgIf
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -22,6 +22,8 @@ import { MatNavList } from '@angular/material/list';
     MatButtonModule,
     MatListModule,
     RouterOutlet,
+    MatNavList,
+    RouterLink
   ],
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss']

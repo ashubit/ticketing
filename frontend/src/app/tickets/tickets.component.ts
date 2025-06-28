@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-tickets',
@@ -13,7 +14,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     MatChipsModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule
   ],
   templateUrl: './tickets.component.html',
   styleUrls: ['./tickets.component.scss']
