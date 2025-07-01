@@ -1,0 +1,13 @@
+<div class="offers-hero">
+  <h1>Exclusive Bus Offers</h1>
+  <div class="offers-list">
+    <div class="central-container">
+      <div class="responsive-grid">
+        <mat-card *ngFor="let offer of offers">
+          <mat-card-title>{{ offer.title }}</mat-card-title>
+          <mat-card-content>{{ offer.description }}</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="booking-hero">
+  <h1>Book Your Ticket</h1>
+  <div class="date-info">Today: {{ today }}</div>
+  <mat-horizontal-stepper>
+    <mat-step label="Select Bus">
+      <p>Choose your bus and seat.</p>
+      <app-shared-button label="Next" (click)="isLoading = true" type="button"></app-shared-button>
+    </mat-step>
+    <mat-step label="Enter Details">
+      <p>Fill in passenger information.</p>
+      <app-shared-button label="Back" (click)="isLoading = false" type="button"></app-shared-button>
+      <app-shared-button label="Next" (click)="isLoading = true" type="button"></app-shared-button>
+    </mat-step>
+    <mat-step label="Payment">
+      <p>Complete your payment.</p>
+      <app-shared-button label="Back" (click)="isLoading = false" type="button"></app-shared-button>
+      <app-shared-button label="Finish" (click)="openModal()" type="button" [disabled]="isBookingDisabled"></app-shared-button>
+    </mat-step>
+  </mat-horizontal-stepper>
+  <app-shared-loader *ngIf="isLoading"></app-shared-loader>
+</div>
+<!-- Modal is opened via openModal() -->

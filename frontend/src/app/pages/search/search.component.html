@@ -1,0 +1,33 @@
+<div class="search-hero">
+  <h1>Find Your Bus Ticket</h1>
+  <form class="search-form">
+    <mat-form-field appearance="fill">
+      <mat-label>From</mat-label>
+      <input matInput placeholder="Departure city">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>To</mat-label>
+      <input matInput placeholder="Destination city">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Search</button>
+  </form>
+  <div class="featured-offers">
+    <h2>Featured Offers</h2>
+    <mat-card class="offer-card" *ngFor="let offer of [1,2,3]">
+      <mat-card-header>
+        <mat-icon mat-card-avatar color="accent">local_offer</mat-icon>
+        <mat-card-title>Special Discount</mat-card-title>
+        <mat-card-subtitle>Save up to 20% on select routes!</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Book now and enjoy exclusive deals on your next journey.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
