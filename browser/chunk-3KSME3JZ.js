@@ -1,0 +1,1 @@
+import{Fa as t,Fc as i,T as e}from"./chunk-TRLCAGBJ.js";var m=(()=>{class o{static \u0275fac=function(r){return new(r||o)};static \u0275mod=t({type:o});static \u0275inj=e({imports:[i]})}return o})();export{m as a};
