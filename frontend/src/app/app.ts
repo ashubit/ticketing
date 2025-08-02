@@ -4,8 +4,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { LayoutComponent } from "./layout/layout.component";
+import { RouterOutlet } from '@angular/router';
+import { SideNav } from './components/side-nav/side-nav';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +16,8 @@ import { LayoutComponent } from "./layout/layout.component";
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    RouterLink,
-],
+    SideNav
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
